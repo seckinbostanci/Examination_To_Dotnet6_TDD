@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  inciragaci.api:
+    image: ${DOCKER_REGISTRY-}inciragaciapi
+    build:
+      context: .
+      dockerfile: IncirAgaci.API/Dockerfile
